@@ -11,7 +11,7 @@
 <script>
   import L from 'leaflet'
   import { LMap, LTileLayer, LIconDefault, LPopup } from 'vue2-leaflet'
-  import './Vue2LeafletEditable'
+  import './Vue2LeafletEditablePlugin'
 
   function rand(n) {
     let max = n + 0.01

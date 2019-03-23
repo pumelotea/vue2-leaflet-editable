@@ -1,9 +1,9 @@
 {
-  "name": "vue2-leaflet-editable",
+  "name": "vue2-leaflet-editable-plugin",
   "version": "1.0.0",
-  "main": "dist/Vue2LeafletEditable.js",
+  "main": "dist/Vue2LeafletEditablePlugin.js",
   "scripts": {
-    "build": "vue build Vue2LeafletEditable.js --prod --lib --config build.config.js",
+    "build": "vue build Vue2LeafletEditablePlugin.js --prod --lib --config build.config.js",
     "example": "vue build example.vue"
   },
   "keywords": [
