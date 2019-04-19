@@ -11,10 +11,7 @@
 <script>
     import L from 'leaflet'
     import {LMap, LTileLayer, LIconDefault, LPopup} from 'vue2-leaflet'
-    import Vue2LeafletEditablePlugin from 'Vue2LeafletEditablePlugin'
-    import Vue from 'vue'
-
-    Vue.use(Vue2LeafletEditablePlugin)
+    import 'Vue2LeafletEditablePlugin'
 
     function rand(n) {
         let max = n + 0.01
@@ -61,7 +58,7 @@
             let isEnd = true
             isEnd = false
             let map = this.$refs.map.mapObject
-            let polygon = map.editTools.startPolygon()
+            let polygon = map.editTools.startPolygon(undefined,{bubblingMouseEvents:false})
             map.on('mouseup', function (e) {
                 if (e.originalEvent.button === 2 && !isEnd) {
                     map.editTools.stopDrawing()
